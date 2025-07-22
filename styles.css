@@ -1,1 +1,71 @@
-/*  your css code here. If applicable */
+ body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-section {
+      margin-bottom: 20px;
+    }
+    .board {
+      display: none;
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+      gap: 0;
+      margin: 20px 0;
+      border: 2px solid #000;
+      background: #fff;
+      justify-content: center;
+    }
+    .cell {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #111;
+      background: #fcbacb;
+      font-family: "Permanent Marker", cursive;
+      font-size: 3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+      user-select: none;
+    }
+    .cell.win {
+      background: #7e2483;
+      color: #fff;
+    }
+    h1 {
+      font-family: "Permanent Marker", cursive;
+      font-size: 2.5rem;
+      margin-bottom: 18px;
+    }
+    .message {
+      min-height: 30px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      padding: 5px;
+      margin: 0 7px;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+    }
+    #submit {
+      padding: 7px 15px;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: none;
+      background: #7e2483;
+      color: white;
+      cursor: pointer;
+    }
+    #submit:hover {
+      background: #aa36ba;
+    }
